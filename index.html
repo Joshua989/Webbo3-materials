@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Study Materials & Review</title>
+    <style>
+        /* Previous styles remain the same */
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #f0f9ff;
+            --text: #1e293b;
+            --bg: #ffffff;
+            --card: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .material-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .material-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .resource-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            background: var(--secondary);
+            border-radius: 0.5rem;
+            color: var(--text);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: background 0.2s;
+        }
+
+        .resource-link:hover {
+            background: #e0f2fe;
+        }
+
+        .review-form {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+            background: white;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.2s;
+        }
+
+        button:hover:not(:disabled) {
+            background: var(--primary-dark);
+        }
+
+        /* New styles for disabled button */
+        button:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .submit-message {
+            display: none;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+
+        .submit-message.success {
+            display: block;
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .submit-message.error {
+            display: block;
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .material-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Webbo 3.0 Study Materials</h1>
+            <p class="subtitle">Welcome to this week's learning materials! Dive into the world of Web3 and decentralized systems through our carefully curated resources. 🚀</p>
+        </div>
+
+        <div class="materials-grid">
+            <div class="material-card">
+                <h2 class="card-title">📚 What is Web3?</h2>
+                <a href="https://youtu.be/JAOrvZgebgs?si=Mm3K4J8h8viO7Pr9" target="_blank" class="resource-link">
+                    🎥 Watch Video Tutorial
+                </a>
+                <a href="https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-web3" target="_blank" class="resource-link">
+                    📖 Read McKinsey Article
+                </a>
+            </div>
+
+            <div class="material-card">
+                <h2 class="card-title">🔄 Centralized vs. Decentralized</h2>
+                <a href="https://www.youtube.com/live/l9OnI37U1EM?si=8k092Y17abi-kPaM" target="_blank" class="resource-link">
+                    🎥 Watch Comparison Video
+                </a>
+                <a href="https://www.hivenet.com/post/centralized-vs-decentralized-blockchain-choosing-the-best-system-for-you" target="_blank" class="resource-link">
+                    📖 Read Detailed Analysis
+                </a>
+            </div>
+        </div>
+
+        <div class="review-form">
+            <h2 class="card-title">📝 Review Questions</h2>
+            <form id="reviewForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="your-name">Your Name</label>
+                    <input type="text" id="your-name" name="your-name" placeholder="Enter your full name" required>
+                </div>
+               
+
+                <div class="form-group">
+                    <label for="your-number">WhatsApp Number</label>
+                    <input type="text" id="your-number" name="your-number" placeholder="Enter your WhatsApp number" required>
+                </div>
+                <div class="form-group">
+                    <label for="your-number">yout team</label>
+                    <input type="text" id="your-number" name="your-team" placeholder="The name of your Team" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="q1">1. What is Web3, and how does it differ from Web2 in terms of data ownership and control?</label>
+                    <textarea id="q1" name="q1" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="q2">2. Explain how blockchain technology plays a role in Web3. Provide an example of a Web3 application.</label>
+                    <textarea id="q2" name="q2" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="q3">3. What are the key differences between centralized and decentralized systems?</label>
+                    <textarea id="q3" name="q3" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="q4">4. In a decentralized system, who is responsible for validating transactions?</label>
+                    <textarea id="q4" name="q4" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="q5">5. Why might a company choose a centralized blockchain over a decentralized one?</label>
+                    <textarea id="q5" name="q5" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" id="submitButton">Submit Answers</button>
+                <div id="submitMessage" class="submit-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <scriptb src="index.js"> >
+       
+    </script>
+</body>
+</html>
