@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3 Study Materials & Review</title>
+    <title>Blockchain & Crypto Wallets Study Materials</title>
     <style>
-        /* Previous styles remain the same */
         :root {
             --primary: #6366f1;
             --primary-dark: #4f46e5;
@@ -148,128 +147,85 @@
             background: var(--primary-dark);
         }
 
-        /* New styles for disabled button */
-        button:disabled {
-            background: #94a3b8;
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
-
-        .submit-message {
-            display: none;
-            text-align: center;
-            margin-top: 1rem;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-        }
-
-        .submit-message.success {
-            display: block;
-            background: #dcfce7;
-            color: #166534;
-        }
-
-        .submit-message.error {
-            display: block;
+        .deadline-notice {
             background: #fee2e2;
             color: #991b1b;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .material-card {
-                padding: 1rem;
-            }
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Webbo 3.0 Study Materials</h1>
-            <p class="subtitle">Welcome to this week's learning materials! Dive into the world of Web3 and decentralized systems through our carefully curated resources. 🚀</p>
+            <h1>Blockchain & Crypto Wallets Study Materials</h1>
+            <p class="subtitle">Explore the fundamentals of blockchain technology and cryptocurrency wallets through our curated resources. 🚀</p>
+        </div>
+
+        <div class="deadline-notice">
+            📅 Submission Deadline: Today Evening
         </div>
 
         <div class="materials-grid">
             <div class="material-card">
-                <h2 class="card-title">📚 What is Web3?</h2>
-                <a href="https://youtu.be/JAOrvZgebgs?si=Mm3K4J8h8viO7Pr9" target="_blank" class="resource-link">
-                    🎥 Watch Video Tutorial
+                <h2 class="card-title">📚 Blockchain Technology</h2>
+                <a href="#" class="resource-link">
+                    🎥 Watch: What is Blockchain?
                 </a>
-                <a href="https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-web3" target="_blank" class="resource-link">
-                    📖 Read McKinsey Article
+                <a href="#" class="resource-link">
+                    📖 Read: Blockchain Definition & Overview
                 </a>
             </div>
 
             <div class="material-card">
-                <h2 class="card-title">🔄 Centralized vs. Decentralized</h2>
-                <a href="https://www.youtube.com/live/l9OnI37U1EM?si=8k092Y17abi-kPaM" target="_blank" class="resource-link">
-                    🎥 Watch Comparison Video
+                <h2 class="card-title">💼 Cryptocurrency Wallets</h2>
+                <a href="#" class="resource-link">
+                    🎥 Watch: What is a Crypto Wallet?
                 </a>
-                <a href="https://www.hivenet.com/post/centralized-vs-decentralized-blockchain-choosing-the-best-system-for-you" target="_blank" class="resource-link">
-                    📖 Read Detailed Analysis
+                <a href="#" class="resource-link">
+                    📖 Read: Bitcoin Wallets Explained
                 </a>
             </div>
         </div>
 
         <div class="review-form">
-            <h2 class="card-title">📝 Review Questions</h2>
+            <h2 class="card-title">📝 Assignment Submission</h2>
             <form id="reviewForm" name="contact-form" action="" method="POST">
                 <div class="form-group">
                     <label for="your-name">Your Name</label>
                     <input type="text" id="your-name" name="your-name" placeholder="Enter your full name" required>
                 </div>
-               
 
                 <div class="form-group">
                     <label for="your-number">WhatsApp Number</label>
                     <input type="text" id="your-number" name="your-number" placeholder="Enter your WhatsApp number" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="your-number">yout team</label>
-                    <input type="text" id="your-number" name="your-team" placeholder="The name of your Team" required>
+                    <label for="your-team">Your Team</label>
+                    <input type="text" id="your-team" name="your-team" placeholder="Enter your team name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="q1">1. What is Web3, and how does it differ from Web2 in terms of data ownership and control?</label>
-                    <textarea id="q1" name="q1" rows="3" required></textarea>
+                    <label for="blockchain-essay">1. Blockchain Essay </label>
+                    <textarea id="blockchain-essay" name="blockchain-essay" rows="6" placeholder="Explain blockchain technology, its advantages, challenges, and provide a real-world example" required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="q2">2. Explain how blockchain technology plays a role in Web3. Provide an example of a Web3 application.</label>
-                    <textarea id="q2" name="q2" rows="3" required></textarea>
+                    <label for="wallet-report">2. Crypto Wallet Report </label>
+                    <textarea id="wallet-report" name="wallet-report" rows="6" placeholder="Define cryptocurrency wallets, explain hot vs cold wallets, and discuss security practices" required></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="q3">3. What are the key differences between centralized and decentralized systems?</label>
-                    <textarea id="q3" name="q3" rows="3" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="q4">4. In a decentralized system, who is responsible for validating transactions?</label>
-                    <textarea id="q4" name="q4" rows="3" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="q5">5. Why might a company choose a centralized blockchain over a decentralized one?</label>
-                    <textarea id="q5" name="q5" rows="3" required></textarea>
-                </div>
-
-                <button type="submit" id="submitButton">Submit Answers</button>
+                <button type="submit" id="submitButton">Submit Assignment</button>
                 <div id="submitMessage" class="submit-message"></div>
             </form>
         </div>
     </div>
 
-    <script> 
+    <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw8tScVuedmU7DKUiel0e4FiklJn81LInQdXZ4G-8RR3eQAEJj7PYr2fmgLZAnqitTI/exec'
 
 const form = document.forms['contact-form']
@@ -314,7 +270,6 @@ document.getElementById('reviewForm').addEventListener('submit', function(e) {
         submitButton.textContent = 'Submit Answers';
     }
 });
-       
     </script>
 </body>
 </html>
